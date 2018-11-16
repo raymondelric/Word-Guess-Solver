@@ -69,20 +69,4 @@ public class MinimaxSolver extends Solver{
         return res;
         
     }
-    
-    public int findMatch(String a, String b){
-        
-        if(memoMatch.containsKey(a + "#" + b))  return memoMatch.get(a + "#" + b);
-        
-        int match = 0;
-        
-        for(int i = 0;i < a.length();i++){
-            if(a.charAt(i) == b.charAt(i))  match++;
-        }
-        
-        memoMatch.put(a+"#"+b, match);
-        memoMatch.put(b+"#"+a, match);
-        
-        return match;
-    }
 }
