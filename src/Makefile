@@ -3,6 +3,8 @@ all:
 run:
 	java Main
 minimax:
-	javac MinimaxSolver.java Master.java
+	java Main minimax
+random:
+	java Main random
 clean:
 	rm -rf ./*.class
