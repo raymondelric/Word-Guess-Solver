@@ -11,6 +11,7 @@ public class Main{
 		if(args.length > 0){
 			if(args[0].equals("random"))	solver = new RandomSolver();
 			if(args[0].equals("minimax"))	solver = new MinimaxSolver();
+			if(args[0].equals("dfs"))		solver = new DFSSolver();
 		}
 		
 		TestData testdata = new TestData(4,200);
