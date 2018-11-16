@@ -17,6 +17,7 @@ public class TestData{
 	public TestData(String path){
 
 		wordList = new ArrayList<>();
+		wordSet = new HashSet<>();
 		rand = new Random();
 
 		BufferedReader reader;
@@ -26,6 +27,7 @@ public class TestData{
 			while (line != null) {
 				// System.out.println(line);
 				wordList.add(line);
+				wordSet.add(line);
 				line = reader.readLine();
 			}
 
@@ -70,6 +72,10 @@ public class TestData{
 
 	public List<String> getList(){
 		return this.wordList;
+	}
+
+	public Set<String> getSet(){
+		return this.wordSet;
 	}
 
 	public String getSecret(){

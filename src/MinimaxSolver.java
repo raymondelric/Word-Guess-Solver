@@ -1,12 +1,8 @@
 import java.util.*;
 
-public class MinimaxSolver{
-    
-    public Map<String, Integer> memoMatch;
-    public List<String> guessList;
+public class MinimaxSolver extends Solver{
     
     public MinimaxSolver(){
-
         memoMatch = new HashMap<>();
         return;
     }
@@ -48,12 +44,6 @@ public class MinimaxSolver{
         }
         return -1;
     }
-    
-    public void showGuessList(){
-        
-        if(this.guessList != null)   System.out.println(this.guessList);
-        return;
-    }
 
     public String minimax(Map<String, Map<Integer, Set<String>>> map){
         
@@ -94,6 +84,5 @@ public class MinimaxSolver{
         memoMatch.put(b+"#"+a, match);
         
         return match;
-        
     }
 }
