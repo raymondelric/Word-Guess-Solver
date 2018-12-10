@@ -14,3 +14,5 @@ To run specific solver:
 - minimax solver: `make minimax`
 
 Clean the all the .class: `make clean` 
+## iOS Demo
+Github: https://github.com/drew109zhn/MinimaxiOSDemo
